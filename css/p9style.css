@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(195, 194, 192);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+.click-btn {
+    width: 100px;
+    margin: auto;
+}
+
+.click-btn button {
+    padding: 10px 20px;
+    background-color: #2979FF;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.click-btn button:hover {
+    background-color: #448AFF;
+    transition: 0.5s;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 13px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
