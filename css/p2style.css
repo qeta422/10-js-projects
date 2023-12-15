@@ -39,7 +39,7 @@ h1 {
 
 .generate-btn {
     padding: 10px 15px;
-    background-color: #29ff62;
+    background-color: #20d651;
     border: none;
     color: white;
     font-weight: bolder;
@@ -48,7 +48,7 @@ h1 {
 }
 
 .generate-btn:hover {
-    background-color: #44ff54c0;
+    background-color: #2ce13bc0;
     transition: 0.5s;
 }
 
