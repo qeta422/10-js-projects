@@ -16,10 +16,13 @@ clickBtn.addEventListener('click', function () {
     container.appendChild(h1El);
     container.appendChild(pEl);
     container.appendChild(closeButton);
-    clickBtn.style.display = "none";
+    clickBtn.classList.add("active");
+    container.classList.remove("active");
     container.style.padding = "30px";
+
 })
 
-
-
-
+closeButton.addEventListener('click', function(){
+    clickBtn.classList.remove("active");
+    container.classList.add("active");
+})
