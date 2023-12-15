@@ -59,10 +59,12 @@ button:hover {
     border-top: 1px solid #ccc;
 }
 
-#result {
+.results span {
     font-size: 14px;
     color: black;
-    margin-top: 15px;
+    font-weight: bold;
 }
+
+
 
 
