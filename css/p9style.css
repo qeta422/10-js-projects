@@ -36,3 +36,22 @@ body {
     align-items: center;
 }
 
+p {
+    margin-top: 0;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #2979FF;
+    border: none;
+    color: white;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #448AFF;
+    transition: 0.5s;
+}
+

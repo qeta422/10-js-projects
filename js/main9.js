@@ -17,6 +17,9 @@ clickBtn.addEventListener('click', function () {
     container.appendChild(pEl);
     container.appendChild(closeButton);
     clickBtn.style.display = "none";
+    container.style.padding = "30px";
 })
+
+
 
 
