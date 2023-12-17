@@ -21,8 +21,23 @@ function renderExpenses() {
 }
 
 function addExpense() {
-    
+    const description = prompt("Enter Expense Description: ");
+    const amount = parseFloat(prompt("Enter Expense Amount: "));
+
+    if (description && amount) {
+        const expense = {
+            description:description,
+            amount:amount
+        };
+
+        expenses.push(expense);
+        total += amount;
+        renderExpenses();
+    }
+   
 }
+
+expenseBtn.addEventListener("click", addExpense);
 
 function deleteExpense() {
     
