@@ -40,6 +40,17 @@ function addExpense() {
 
 expenseBtn.addEventListener("click", addExpense);
 
-function deleteExpense() {
-    
+function deleteExpense(index) {
+    total -= expenses[index].amount;
+    expenses.splice(index, 1);
+    renderExpenses();
 }
+
+list.addEventListener("click", function(event) {
+    if (event.target.classList.contains("delete-btn")) {
+        const index = Array.from(event.target.parentNode.parentNode.children)
+        .indexOf(event.target.parentNode);
+        
+        deleteExpense(index);
+    }
+})
