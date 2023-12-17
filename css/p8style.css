@@ -24,7 +24,7 @@ body {
     align-items: center;
 }
 
-button {
+.expense-btn {
     padding: 10px 20px;
     background-color: #20d651;
     border: none;
@@ -34,13 +34,33 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.expense-btn:hover {
     background-color: #2ce13bc0;
     transition: 0.5s;
 }
 
 .container p {
-    margin-bottom: 0;
+    margin: 20px 0px 5px 0px;
     text-align: right;
 }
 
+.list .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #ccc;
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: rgb(216, 48, 48);
+    color: white;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    
+}

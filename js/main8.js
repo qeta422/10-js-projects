@@ -8,16 +8,17 @@ let total = 0;
 function renderExpenses() {
     let html = "";
     expenses.forEach(expense => {
-        hrml += `
+        html += `
             <div class="item">
-                <div class="item-description"></div>
-                <div class="item-amount"></div>
+                <div class="item-description">${expense.description}</div>
+                <div class="item-amount">$${expense.amount}</div>
                 <button class="delete-btn">&times;</button>
             </div>
         `;
     });
+
     list.innerHTML = html;
-    expenseAmount.innerHTML = `Total Expenses: $`; 
+    expenseAmount.innerText = `Total Expenses: $${total}`; 
 }
 
 function addExpense() {
